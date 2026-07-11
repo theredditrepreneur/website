@@ -23,7 +23,7 @@ export const products = [
 ] as const;
 
 export const services = [
-  { slug:"community-intelligence-audit", title:"Community Intelligence Audit", price:"£595", description:"A human-led strategic analysis of the conversations shaping your brand, competitors and market, delivered within seven days.", checkout:"https://buy.stripe.com/28E4gA6PD5j6fbvgrbefC00" },
+  { slug:"community-intelligence-audit", title:"Community Intelligence Audit", price:"£595", description:"A strategic analysis led by a human expert, covering the conversations shaping your brand, competitors and market, delivered within seven days.", checkout:"https://buy.stripe.com/28E4gA6PD5j6fbvgrbefC00" },
   { slug:"community-intelligence-consulting", title:"Community Intelligence Consulting", description:"Strategic guidance for teams using online conversations to improve marketing, products and positioning." },
   { slug:"community-intelligence-research", title:"Community Intelligence Research", description:"Custom research into customer behaviour, competitor positioning and emerging market conversations." },
   { slug:"competitor-intelligence-analysis", title:"Competitor Intelligence Analysis", description:"Understand how communities compare competitors, where trust is built and where differentiation is possible." },
@@ -37,5 +37,5 @@ export const solutions = [
   {slug:"customer-insights",title:"Customer Insights",description:"Learn what customers say when the brand is not in the room."},
   {slug:"competitive-intelligence",title:"Competitive Intelligence",description:"Understand why communities choose competitors."},
   {slug:"ai-search-visibility",title:"AI Search Visibility",description:"Build authority around the conversations AI answer engines use for context."},
-  {slug:"agencies",title:"Agencies",description:"Deliver community-informed research and strategy for clients."},
+  {slug:"agencies",title:"Agencies",description:"Deliver research and strategy informed by communities for clients."},
 ] as const;
