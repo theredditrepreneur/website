@@ -1,0 +1,7 @@
+import Image from "next/image"; import Link from "next/link";
+const groups=[
+ ["Platform",[["Overview","/platform"],["Analyse","/platform/analyse"],["Discover","/platform/discover"],["Alerts","/platform/alerts"],["Pricing","https://app.theredditrepreneur.com/pricing"]]],
+ ["Research",[["Research hub","/research"],["Blog","https://blog.theredditrepreneur.com"],["Knowledge base","https://research.theredditrepreneur.com"],["Glossary","https://blog.theredditrepreneur.com/glossary/"],["Weekly","https://theredditrepreneur.substack.com/"]]],
+ ["Company",[["About","/about"],["Founder","/founder"],["Contact","/contact"],["Privacy","/privacy"],["Cookies","/cookies"],["Terms","/terms"]]],
+] as const;
+export function Footer(){return <footer><div className="shell footer-grid"><div><Image src="/brand/redditrepreneur-logo.png" alt="The Redditrepreneur" width={150} height={150}/><p><strong>The Home of Community Intelligence.</strong></p><p>The Redditrepreneur is a Community Intelligence platform and research company helping businesses understand what online communities say about their brand, competitors and market.</p></div>{groups.map(([name,links])=><div key={name}><h2>{name}</h2>{links.map(([label,href])=><Link key={label} href={href}>{label}</Link>)}</div>)}</div><div className="shell legal"><span>© {new Date().getFullYear()} The Redditrepreneur</span><div><a href="https://www.linkedin.com/company/the-redditrepreneur/">LinkedIn</a><a href="https://x.com/Redditrepreneur">X</a><a href="https://www.youtube.com/@theredditrepreneur">YouTube</a></div></div></footer>}

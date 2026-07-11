@@ -1,0 +1,3 @@
+import type { Metadata } from "next"; import { Cards, Section } from "@/components/Sections"; import { solutions } from "@/lib/site";
+export const metadata:Metadata={title:"Community Intelligence Solutions",description:"Community Intelligence for marketing, product, customer insight, competitive intelligence, AI visibility and agencies."};
+export default function Page(){return <><header className="page-hero"><div className="shell"><p className="eyebrow">Solutions</p><h1>Community Intelligence for Better Decisions.</h1><p className="lede">Apply public community conversations to the questions your team needs to answer.</p></div></header><Section title="Choose your outcome"><Cards items={solutions.map(x=>({...x,href:`/solutions/${x.slug}`}))}/></Section></>}
