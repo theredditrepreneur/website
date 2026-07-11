@@ -1,0 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
+import { ecosystem, featuredResearch } from "@/lib/home-content";
+
+export function EcosystemGrid(){return <div className="ecosystem-wrap"><div className="ecosystem-flow" aria-label="The Community Intelligence ecosystem"><span>Research</span><i aria-hidden>→</i><span>Frameworks</span><i aria-hidden>→</i><span>Scorecards</span><i aria-hidden>→</i><span>Software</span><i aria-hidden>→</i><span>Services</span></div><div className="cards ecosystem-cards">{ecosystem.map(item=><article className="card ecosystem-card" key={item.title}><span className="card-icon" aria-hidden>{item.icon}</span><h3>{item.title}</h3><p>{item.description}</p><Link className="text-link" href={item.href}>{item.label} <span aria-hidden>→</span></Link></article>)}</div></div>}
+
+export function ResearchGrid(){return <div className="research-grid">{featuredResearch.map(item=><article className="research-card" key={item.title}><a href={item.href} className="research-image"><Image src={item.image} alt={`${item.title} cover`} width={1200} height={750} sizes="(max-width: 650px) 100vw, (max-width: 980px) 50vw, 33vw"/></a><div className="research-body"><div className="research-meta"><span>{item.type}</span><time>{item.date}</time></div><h3>{item.title}</h3><p>{item.summary}</p><a className="text-link" href={item.href}>{item.cta} <span aria-hidden>→</span></a></div></article>)}</div>}
