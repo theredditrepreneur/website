@@ -8,7 +8,7 @@ const socials=[
   {label:"LinkedIn",href:"https://www.linkedin.com/company/the-redditrepreneur/",icon:<><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="5" r="2"/><path d="M11 21V9h4v2c1-2 6-3 6 4v6h-4v-6c0-2-2-3-3-1v7z"/></>},
   {label:"X",href:"https://x.com/Redditrepreneur",icon:<path d="M4 3l16 18M20 3L4 21"/>},
   {label:"YouTube",href:"https://www.youtube.com/@theredditrepreneur",icon:<><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l6 3-6 3z"/></>},
-  {label:"Facebook",href:"https://www.facebook.com/theredditrepreneur",icon:<path d="M14 8h4V4h-4c-4 0-6 2-6 6v3H5v4h3v5h5v-5h4l1-4h-5v-3c0-1 0-2 1-2z"/>},
+  {label:"Facebook",href:"https://www.facebook.com/profile.php?id=61591573800978",icon:<path d="M14 8h4V4h-4c-4 0-6 2-6 6v3H5v4h3v5h5v-5h4l1-4h-5v-3c0-1 0-2 1-2z"/>},
   {label:"Instagram",href:"https://www.instagram.com/theredditrepreneur/",icon:<><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></>},
   {label:"TikTok",href:"https://www.tiktok.com/@redditrepreneur",icon:<path d="M15 3v11a5 5 0 1 1-4-5v4a2 2 0 1 0 1 2V3h3c1 3 3 4 6 4v4c-2 0-4-1-6-2"/>},
 ] as const;
