@@ -2,6 +2,7 @@ import Image from "next/image"; import Link from "next/link";
 const groups=[
  ["Platform",[["Overview","/platform"],["Analyse","/platform/analyse"],["Discover","/platform/discover"],["Alerts","/platform/alerts"],["Pricing","https://app.theredditrepreneur.com/pricing"]]],
  ["Research",[["Research hub","/research"],["Blog","https://blog.theredditrepreneur.com"],["Knowledge base","https://research.theredditrepreneur.com"],["Glossary","https://blog.theredditrepreneur.com/glossary/"],["Weekly","https://theredditrepreneur.substack.com/"]]],
+ ["Services",[["AI Authority Audit","/services/ai-authority-audit"],["Community Intelligence Audit","/services/community-intelligence-audit"],["Consulting","/services/community-intelligence-consulting"],["Custom Research","/services/community-intelligence-research"],["All services","/services"]]],
  ["Company",[["About","/about"],["Founder","/founder"],["Contact","/contact"],["Privacy","/privacy"],["Cookies","/cookies"],["Terms","/terms"]]],
 ] as const;
 const socials=[

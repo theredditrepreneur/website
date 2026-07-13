@@ -23,6 +23,7 @@ export const products = [
 ] as const;
 
 export const services = [
+  { slug:"ai-authority-audit", title:"AI Authority Audit", description:"Discover what AI believes about your brand, why it recommends competitors and which evidence gaps are limiting your authority.", checkout:"https://buy.stripe.com/7sYcN6b5TfXKd3n5MxefC05", image:"/services/ai-authority-audit.jpg", featured:true },
   { slug:"community-intelligence-audit", title:"Community Intelligence Audit", price:"£595", description:"A strategic analysis led by a human expert, covering the conversations shaping your brand, competitors and market, delivered within seven days.", checkout:"https://buy.stripe.com/28E4gA6PD5j6fbvgrbefC00" },
   { slug:"community-intelligence-consulting", title:"Community Intelligence Consulting", description:"Strategic guidance for teams using online conversations to improve marketing, products and positioning." },
   { slug:"community-intelligence-research", title:"Community Intelligence Research", description:"Custom research into customer behaviour, competitor positioning and emerging market conversations." },
