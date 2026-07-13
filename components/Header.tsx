@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { primaryCta } from "@/lib/site";
+import { fractionalCci } from "@/lib/fractional-cci";
 
 const links = [
   ["Community Intelligence", "/community-intelligence"],
@@ -12,7 +13,7 @@ const links = [
   ["Research", "/research"],
   ["Solutions", "/solutions"],
   ["Services", "/services"],
-  ["AI Authority Audit", "/services/ai-authority-audit"],
+  [fractionalCci.navigationLabel, `/services/${fractionalCci.slug}`],
   ["Products", "/products"],
 ] as const;
 
