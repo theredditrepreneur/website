@@ -14,5 +14,7 @@
 .engagement-final .eyebrow{color:#ff6b35}
 .engagement-cta.button:not(.secondary){background:#c93606;border-color:#c93606}
 .engagement-cta.button:not(.secondary):hover{background:#a92d04;border-color:#a92d04}
+.brand-engagement-home{padding-bottom:40px}
+.brand-engagement-home+.section{padding-top:40px}
 @media(max-width:980px){.brand-engagement-card{grid-template-columns:1fr}}
-@media(max-width:650px){.methodology-grid{grid-template-columns:1fr}.brand-engagement-card{padding:18px;gap:22px}.brand-engagement-copy h3{font-size:1.7rem}.engagement-meta{gap:6px}}
+@media(max-width:650px){.brand-engagement-home{padding-bottom:28px}.brand-engagement-home+.section{padding-top:28px}.methodology-grid{grid-template-columns:1fr}.brand-engagement-card{padding:18px;gap:22px}.brand-engagement-copy h3{font-size:1.7rem}.engagement-meta{gap:6px}}

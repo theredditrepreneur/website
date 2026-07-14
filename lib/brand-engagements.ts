@@ -29,6 +29,7 @@ export const brandEngagements: BrandEngagement[] = [
     interactionType: "Public brand response",
     screenshot: "/proof/honest-burgers-community-intelligence-engagement.jpg",
     screenshotAlt: "Honest Burgers LinkedIn comment responding positively to The Redditrepreneur's Community Intelligence Scorecard about burger restaurants in Manchester",
+    publicInteractionUrl: "https://lnkd.in/p/e-NyMpmH",
     disclosure: "This was a public, unsolicited response. Honest Burgers is not presented as a client, partner or endorser of The Redditrepreneur.",
     featured: true,
     published: true,
