@@ -2,7 +2,7 @@ import Image from "next/image"; import Link from "next/link"; import { fractiona
 const groups=[
  ["Platform",[["Overview","/platform"],["Analyse","/platform/analyse"],["Discover","/platform/discover"],["Alerts","/platform/alerts"],["Pricing","https://app.theredditrepreneur.com/pricing"]]],
  ["Research",[["Research hub","/research"],["Brand Engagement","/brands-engaging-with-community-intelligence"],["Blog","https://blog.theredditrepreneur.com"],["Knowledge base","https://research.theredditrepreneur.com"],["Glossary","https://blog.theredditrepreneur.com/glossary/"],["Weekly","https://theredditrepreneur.substack.com/"]]],
- ["Services",[[fractionalCci.navigationLabel,`/services/${fractionalCci.slug}`],["AI Authority Audit","/services/ai-authority-audit"],["Community Intelligence Audit","/services/community-intelligence-audit"],["Consulting","/services/community-intelligence-consulting"],["All services","/services"]]],
+ ["Services",[[fractionalCci.navigationLabel,`/services/${fractionalCci.slug}`],["Community Intelligence Audit","/services/community-intelligence-audit"],["AI Authority Audit","/services/ai-authority-audit"],["Reddit Risk Audit","/services/reddit-authenticity-risk-audit"],["All services","/services"]]],
  ["Company",[["About","/about"],["Founder","/founder"],["Contact","/contact"],["Privacy","/privacy"],["Cookies","/cookies"],["Terms","/terms"]]],
 ] as const;
 const socials=[
