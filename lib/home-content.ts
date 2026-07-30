@@ -40,11 +40,44 @@ export const audiences = [
   { title: "Agencies", description: "Deliver stronger research, strategy and recommendations using real community evidence.", href: "/solutions/agencies" },
 ];
 
+export const industries = [
+  { icon: "GA", title: "Gaming", description: "Understanding what players, fans and gaming communities really think.", href: "https://blog.theredditrepreneur.com/search?q=Gaming", label: "Explore gaming research" },
+  { icon: "AI", title: "AI", description: "Understanding how people use, trust and talk about artificial intelligence.", href: "https://blog.theredditrepreneur.com/topics/ai-search", label: "Explore AI research" },
+  { icon: "SP", title: "Sport", description: "Understanding fan communities, trusted voices and the conversations behind the headlines.", href: "https://blog.theredditrepreneur.com/search?q=Sport", label: "Explore sport research" },
+  { icon: "SA", title: "SaaS", description: "Understanding customer frustrations, product feedback, competitor mentions and signs of churn.", href: "https://blog.theredditrepreneur.com/search?q=SaaS", label: "Explore SaaS research" },
+  { icon: "CB", title: "Consumer Brands", description: "Understanding how community conversations influence trust and buying decisions.", href: "https://blog.theredditrepreneur.com/topics/consumer-brands", label: "Explore consumer brand research" },
+  { icon: "EN", title: "Entertainment", description: "Understanding fandoms, creators, streaming, culture and audience behaviour.", href: "https://blog.theredditrepreneur.com/search?q=Entertainment", label: "Explore entertainment research" },
+];
+
+export const researchCategories = [
+  { icon: "01", title: "Editorial Analysis", description: "Clear explanations of what major news reveals about communities." },
+  { icon: "02", title: "Community Research", description: "Research into what people think, feel, trust and reject." },
+  { icon: "03", title: "Scorecards and Indexes", description: "Structured comparisons of brands, products and communities." },
+  { icon: "04", title: "Frameworks", description: "Original ways to understand community behaviour and business impact." },
+];
+
+export const communityIntelligenceBenefits = [
+  "What people really think",
+  "Who and what they trust",
+  "Why opinions are changing",
+  "What customers want next",
+  "Where reputation risks are growing",
+  "What action the business should take",
+];
+
+export const commercialOffers = [
+  { slug: "fractional-chief-community-intelligence-officer", title: "Community Intelligence Retainer", audience: "Leadership teams that need ongoing Community Intelligence direction.", receives: "Executive briefings, strategic sessions, monitoring and direct advisory support." },
+  { slug: "community-intelligence-audit", audience: "Businesses that need a focused view of their brand, competitors and market.", receives: "A human led report with findings, risks, opportunities and recommended actions." },
+  { slug: "workshops", title: "Community Intelligence Workshop", audience: "Teams building practical Community Intelligence capability.", receives: "A tailored, hands on session built around the team’s priorities." },
+  { slug: "ai-authority-audit", audience: "Brands that need to understand the evidence shaping AI recommendations.", receives: "AI recommendation analysis, evidence gaps, citation opportunities and a clear roadmap." },
+  { slug: "reddit-authenticity-risk-audit", audience: "Brands planning or reviewing their participation on Reddit.", receives: "A manual assessment of authenticity, community fit, moderation exposure and trust risk." },
+];
+
 export const featuredResearch = [
-  { type: "Case study", title: "X-Men '97 Season 2", summary: "How trust, interpretation and participation are rewarding the community that believed in the series.", date: "24 July 2026", cta: "Read the case study", image: "/research/x-men-97-community-intelligence.jpg", href: "https://blog.theredditrepreneur.com/x-men-97-season-2-community-intelligence-episode-6/" },
-  { type: "Case study", title: "The Rest Is Football", summary: "How community success creates evidence, reduces uncertainty and opens new commercial opportunities.", date: "24 July 2026", cta: "Read the case study", image: "/research/rest-is-football-community-success.webp", href: "https://blog.theredditrepreneur.com/the-rest-is-football-community-success-business-opportunities/" },
-  { type: "Analysis", title: "HubSpot Made Reddit a Performance Marketing Channel", summary: "Why Reddit, forums and AI search are becoming part of the modern acquisition engine.", date: "24 July 2026", cta: "Read the analysis", image: "/research/hubspot-reddit-performance-marketing.webp", href: "https://blog.theredditrepreneur.com/hubspot-just-made-reddit-a-performance-marketing-channel/" },
-  { type: "Scorecard", title: "Roblox Community Intelligence Scorecard", summary: "Roblox excels at participation while moderation, support and creator experience reveal important opportunities.", date: "23 July 2026", cta: "Read the Scorecard", image: "/research/roblox-scorecard.webp", href: "https://blog.theredditrepreneur.com/roblox-community-intelligence-scorecard/" },
-  { type: "Research", title: "Community Intelligence Is an Early Warning System", summary: "How emerging customer needs, competitor shifts and market trends appear before traditional research catches up.", date: "21 July 2026", cta: "Read the research", image: "/research/community-intelligence-early-warning.webp", href: "https://blog.theredditrepreneur.com/community-intelligence-is-an-early-warning-system/" },
-  { type: "Scorecard", title: "Nike Community Intelligence Scorecard", summary: "Nike still leads culture, but challenger brands are changing conversations about performance, innovation and value.", date: "20 July 2026", cta: "Read the Scorecard", image: "/research/nike-scorecard.webp", href: "https://blog.theredditrepreneur.com/nike-community-intelligence-scorecard/" },
+  { type: "Gaming", title: "Fortnite's AI Characters Are Becoming Community Members That Never Log Off", summary: "What conversational AI characters could mean for trust, participation and community life inside Fortnite.", date: "30 July 2026", cta: "Read article", image: "/research/fortnite-ai-characters.webp", href: "https://blog.theredditrepreneur.com/fortnite-ai-characters-community-members/" },
+  { type: "Sport", title: "Every Community Has Its Own David Ornstein", summary: "What football transfer reporting reveals about how authority and trust move through every community.", date: "29 July 2026", cta: "Read article", image: "/research/david-ornstein-community-authority.webp", href: "https://blog.theredditrepreneur.com/every-community-has-its-own-david-ornstein/" },
+  { type: "Gaming", title: "GTA VI Is Becoming the Game That Sells the Entire Gaming Ecosystem", summary: "Why one game could drive console sales through the pull of a shared community experience.", date: "29 July 2026", cta: "Read article", image: "/research/gta-vi-gaming-ecosystem.webp", href: "https://blog.theredditrepreneur.com/gta-vi-selling-the-entire-gaming-ecosystem/" },
+  { type: "Gaming", title: "Even Your Xbox Game Disc Now Needs Permission From the Internet", summary: "How platform outages are changing what physical ownership means to gaming communities.", date: "29 July 2026", cta: "Read article", image: "/research/xbox-internet-permission.webp", href: "https://blog.theredditrepreneur.com/xbox-game-disc-needs-internet-permission/" },
+  { type: "Entertainment", title: "Netflix Has Become Britain's Default TV Channel", summary: "How Netflix is becoming a primary doorway through which British audiences discover television.", date: "29 July 2026", cta: "Read article", image: "/research/netflix-britain-default-tv.webp", href: "https://blog.theredditrepreneur.com/netflix-has-become-britains-default-tv-channel/" },
+  { type: "AI", title: "Companies Are Building an Invisible AI Workforce", summary: "Why businesses must identify, manage and explain the AI agents operating inside their organisations.", date: "29 July 2026", cta: "Read article", image: "/research/cyera-invisible-ai-workforce.webp", href: "https://blog.theredditrepreneur.com/cyera-invisible-ai-workforce/" },
 ];

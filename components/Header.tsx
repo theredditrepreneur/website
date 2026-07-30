@@ -5,16 +5,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { primaryCta } from "@/lib/site";
-import { fractionalCci } from "@/lib/fractional-cci";
 
 const links = [
-  ["Community Intelligence", "/community-intelligence"],
-  ["Platform", "/platform"],
-  ["Research", "/research"],
-  ["Solutions", "/solutions"],
-  ["Services", "/services"],
-  [fractionalCci.navigationLabel, `/services/${fractionalCci.slug}`],
-  ["Products", "/products"],
+  ["Research", "https://blog.theredditrepreneur.com"],
+  ["Industries", "/#industries"],
+  ["Frameworks", "https://blog.theredditrepreneur.com/frameworks"],
+  ["Services", "/#services"],
+  ["Software", "/platform"],
+  ["About", "/about"],
 ] as const;
 
 export function Header(){
