@@ -9,6 +9,7 @@ import { primaryCta } from "@/lib/site";
 const links = [
   ["Research", "https://blog.theredditrepreneur.com"],
   ["Industries", "/#industries"],
+  ["Publications", "/publications"],
   ["Frameworks", "https://blog.theredditrepreneur.com/frameworks"],
   ["Services", "/#services"],
   ["Software", "/platform"],

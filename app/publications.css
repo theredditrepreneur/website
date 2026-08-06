@@ -1,0 +1,141 @@
+#publications,
+#community-intelligence-in-practice {
+  scroll-margin-top: 96px;
+}
+
+.publication-list {
+  margin-top: 38px;
+}
+
+.publication-card {
+  overflow: hidden;
+  border: 1px solid #cfd8e8;
+  border-top: 5px solid #095de8;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.publication-card-media {
+  display: grid;
+  min-height: 260px;
+  place-items: center;
+  padding: 24px;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.publication-card-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 370px;
+  object-fit: contain;
+}
+
+.publication-card-body {
+  padding: 34px;
+}
+
+.publication-ownership {
+  margin: 0 0 18px;
+  color: #095de8;
+  font-size: .82rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.publication-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.publication-heading h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+
+.publication-tagline {
+  margin: 10px 0 0;
+  color: var(--navy);
+  font-size: 1.2rem;
+  font-weight: 750;
+}
+
+.publication-heading > span {
+  flex: 0 0 auto;
+  padding: 6px 12px;
+  border: 1px solid #b8c8e5;
+  border-radius: 999px;
+  color: #064fbf;
+  font-size: .78rem;
+  font-weight: 850;
+}
+
+.publication-card-body > p:not(.publication-ownership):not(.publication-tagline) {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.bloxline-button {
+  background: #064fbf;
+  border-color: #064fbf;
+}
+
+.bloxline-button:hover {
+  background: #043f99;
+  border-color: #043f99;
+}
+
+.publication-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.publication-profile-grid article {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.publication-profile-grid h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 1.25rem;
+}
+
+.publication-profile-grid p {
+  margin: 0;
+}
+
+.footer-publication-note {
+  padding-left: 14px;
+  border-left: 3px solid #2e73e8;
+  font-size: .92rem;
+}
+
+.footer-publication-note a {
+  display: inline;
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+}
+
+@media(max-width:650px){
+  .publication-card-media{min-height:180px;padding:16px}
+  .publication-card-body{padding:24px}
+  .publication-heading{display:block}
+  .publication-heading > span{display:inline-block;margin-top:18px}
+  .publication-profile-grid{grid-template-columns:1fr}
+  .publication-card .button-row .button{width:100%}
+}
