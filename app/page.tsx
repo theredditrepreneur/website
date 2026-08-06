@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ResearchGrid } from "@/components/HomeSections";
+import { PublicationCard } from "@/components/PublicationCard";
 import { Section } from "@/components/Sections";
 import { BrandEngagementCard, BrandEngagementSectionView, EngagementCta } from "@/components/BrandEngagement";
 import { featuredBrandEngagements } from "@/lib/brand-engagements";
 import { commercialOffers, communityIntelligenceBenefits, industries, researchCategories } from "@/lib/home-content";
 import { services, site } from "@/lib/site";
+import { featuredPublications } from "@/lib/publications";
 
 export default function Home(){
   const serviceOffers=commercialOffers.map(offer=>({offer,service:services.find(item=>item.slug===offer.slug)})).filter(item=>item.service);
@@ -15,6 +17,8 @@ export default function Home(){
     <Section id="industries" eyebrow="Our coverage" title="Industries we track" intro="We study how communities shape reputation, trust, buying decisions and culture across the world’s most important industries."><div className="industry-grid">{industries.map(item=><article className="industry-card" key={item.title}><span className="industry-icon" aria-hidden>{item.icon}</span><h3>{item.title}</h3><p>{item.description}</p><a className="text-link" href={item.href}>{item.label} <span aria-hidden>→</span></a></article>)}</div></Section>
 
     <Section eyebrow="New from the publication" title="Latest research" intro="The latest Community Intelligence analysis from The Redditrepreneur." className="alt"><ResearchGrid/><div className="button-row"><a className="button" href={site.blogUrl}>View all research</a></div></Section>
+
+    <Section id="publications" eyebrow="Our publishing ecosystem" title="Our Publications" intro="The Redditrepreneur creates specialist publications that help people understand important online communities and emerging industries. Our publications combine clear editorial analysis, practical guidance and original research."><div className="publication-list">{featuredPublications.map(publication=><PublicationCard key={publication.name} publication={publication} secondaryHref="/publications#community-intelligence-in-practice"/>)}</div><div className="button-row"><Link className="button secondary" href="/publications">Explore all publications</Link></div></Section>
 
     <Section eyebrow="What we publish" title="Research built from real community conversations"><div className="publication-intro"><div className="prose"><p>Most businesses rely on surveys, reviews and internal dashboards.</p><p>The Redditrepreneur studies the conversations people have when brands are not in the room.</p><p>We turn those conversations into clear research on trust, reputation, customer needs, market shifts and emerging risks.</p></div><div className="research-category-grid">{researchCategories.map(item=><article key={item.title}><span aria-hidden>{item.icon}</span><div><h3>{item.title}</h3><p>{item.description}</p></div></article>)}</div></div></Section>
 

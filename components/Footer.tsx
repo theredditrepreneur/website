@@ -1,9 +1,13 @@
-import Image from "next/image"; import Link from "next/link";
+import Image from "next/image";
+import Link from "next/link";
+import { bloxline } from "@/lib/publications";
+
 const groups=[
- ["Research",[["Latest research","https://blog.theredditrepreneur.com"],["Gaming","https://blog.theredditrepreneur.com/search?q=Gaming"],["AI","https://blog.theredditrepreneur.com/topics/ai-search"],["Sport","https://blog.theredditrepreneur.com/search?q=Sport"],["SaaS","https://blog.theredditrepreneur.com/search?q=SaaS"],["Consumer Brands","https://blog.theredditrepreneur.com/topics/consumer-brands"],["Entertainment","https://blog.theredditrepreneur.com/search?q=Entertainment"],["Frameworks","https://blog.theredditrepreneur.com/frameworks"]]],
- ["Work with us",[["Services","/services"],["Community Intelligence Audit","/services/community-intelligence-audit"],["AI Authority Audit","/services/ai-authority-audit"],["Software","/platform"],["Software pricing","https://app.theredditrepreneur.com/pricing"]]],
- ["Company",[["About","/about"],["Founder","/founder"],["Contact","/contact"],["Brand engagement","/brands-engaging-with-community-intelligence"],["Privacy","/privacy"],["Cookies","/cookies"],["Terms","/terms"]]],
+  ["Publications",[["All publications","/publications"],["The Bloxline",bloxline.url],["Research","https://blog.theredditrepreneur.com"],["Industries","/#industries"],["Frameworks","https://blog.theredditrepreneur.com/frameworks"]]],
+  ["Work with us",[["Services","/services"],["Community Intelligence Audit","/services/community-intelligence-audit"],["AI Authority Audit","/services/ai-authority-audit"],["Software","/platform"],["Software pricing","https://app.theredditrepreneur.com/pricing"]]],
+  ["Company",[["About","/about"],["Founder","/founder"],["Contact","/contact"],["Brand engagement","/brands-engaging-with-community-intelligence"],["Privacy","/privacy"],["Cookies","/cookies"],["Terms","/terms"]]],
 ] as const;
+
 const socials=[
   {label:"LinkedIn",href:"https://www.linkedin.com/company/the-redditrepreneur/",icon:<><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="5" r="2"/><path d="M11 21V9h4v2c1-2 6-3 6 4v6h-4v-6c0-2-2-3-3-1v7z"/></>},
   {label:"X",href:"https://x.com/Redditrepreneur",icon:<path d="M4 3l16 18M20 3L4 21"/>},
@@ -12,4 +16,5 @@ const socials=[
   {label:"Instagram",href:"https://www.instagram.com/theredditrepreneur/",icon:<><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></>},
   {label:"TikTok",href:"https://www.tiktok.com/@redditrepreneur",icon:<path d="M15 3v11a5 5 0 1 1-4-5v4a2 2 0 1 0 1 2V3h3c1 3 3 4 6 4v4c-2 0-4-1-6-2"/>},
 ] as const;
-export function Footer(){return <footer><div className="shell footer-grid"><div><Image src="/brand/redditrepreneur-logo.png" alt="The Redditrepreneur" width={150} height={150}/><p><strong>Community Intelligence for the world’s most important industries.</strong></p><p>The Redditrepreneur publishes research that helps businesses understand what online communities really think.</p></div>{groups.map(([name,links])=><div key={name}><h2>{name}</h2>{links.map(([label,href])=><Link key={label} href={href}>{label}</Link>)}</div>)}</div><div className="shell legal"><span>© {new Date().getFullYear()} The Redditrepreneur</span><div className="social-icons">{socials.map(item=><a key={item.label} href={item.href} aria-label={item.label} title={item.label} rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true">{item.icon}</svg></a>)}</div></div></footer>}
+
+export function Footer(){return <footer><div className="shell footer-grid"><div><Image src="/brand/redditrepreneur-logo.png" alt="The Redditrepreneur" width={150} height={150}/><p><strong>Community Intelligence for the world’s most important industries.</strong></p><p>The Redditrepreneur publishes research that helps businesses understand what online communities really think.</p><p className="footer-publication-note"><a href={bloxline.url} target="_blank" rel="noopener noreferrer">The Bloxline</a> is a specialist publication from The Redditrepreneur.</p></div>{groups.map(([name,links])=><div key={name}><h2>{name}</h2>{links.map(([label,href])=>href.startsWith("http")?<a key={label} href={href} target="_blank" rel="noopener noreferrer">{label}</a>:<Link key={label} href={href}>{label}</Link>)}</div>)}</div><div className="shell legal"><span>© {new Date().getFullYear()} The Redditrepreneur</span><div className="social-icons">{socials.map(item=><a key={item.label} href={item.href} aria-label={item.label} title={item.label} target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true">{item.icon}</svg></a>)}</div></div></footer>}
