@@ -8,6 +8,12 @@ import { useEffect, useState } from "react";
 const links = [
   ["Brands", "/#brands"],
   ["Community Intelligence", "/community-intelligence"],
+  ["Research", "https://blog.theredditrepreneur.com"],
+  ["Industries", "/#industries"],
+  ["Publications", "/publications"],
+  ["Frameworks", "https://blog.theredditrepreneur.com/frameworks"],
+  ["Services", "/#services"],
+  ["Software", "/platform"],
   ["About", "/about"],
   ["Contact", "/contact"],
 ] as const;
