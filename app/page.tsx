@@ -2,13 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { PublicationCard } from "@/components/PublicationCard";
 import { Section } from "@/components/Sections";
-import { ResearchGrid } from "@/components/HomeSections";
-import { PublicationCard } from "@/components/PublicationCard";
-import { Section } from "@/components/Sections";
-import { BrandEngagementCard, BrandEngagementSectionView, EngagementCta } from "@/components/BrandEngagement";
-import { featuredBrandEngagements } from "@/lib/brand-engagements";
-import { commercialOffers, communityIntelligenceBenefits, industries, researchCategories } from "@/lib/home-content";
-import { services, site } from "@/lib/site";
 import { featuredPublications } from "@/lib/publications";
 
 const capabilities = [
@@ -29,9 +22,6 @@ export default function Home(){return <>
   <section className="hero intelligence-hero"><div className="shell"><p className="eyebrow">The Redditrepreneur</p><h1>Intelligence for emerging digital communities.</h1><p className="lede">The Redditrepreneur builds specialist intelligence brands that understand the communities, industries and economies shaping what comes next.</p><div className="button-row"><a className="button" href="#brands">Explore our brands</a></div></div></section>
 
   <Section id="brands" eyebrow="Our portfolio" title="Our intelligence brands" intro="Each brand focuses deeply on a specific emerging digital ecosystem."><div className="intelligence-brand-grid">{featuredPublications.map(publication=><PublicationCard key={publication.slug} publication={publication}/>)}</div><article className="future-brand"><p className="eyebrow">The portfolio grows with the opportunity</p><h3>More communities are coming.</h3><p>We launch new intelligence brands where emerging digital communities are creating meaningful industries, behaviours and business opportunities.</p></article></Section>
-    <Section id="publications" eyebrow="Our publishing ecosystem" title="Our Publications" intro="The Redditrepreneur creates specialist publications that help people understand important online communities and emerging industries. Our publications combine clear editorial analysis, practical guidance and original research."><div className="publication-list">{featuredPublications.map(publication=><PublicationCard key={publication.name} publication={publication} secondaryHref="/publications#community-intelligence-in-practice"/>)}</div><div className="button-row"><Link className="button secondary" href="/publications">Explore all publications</Link></div></Section>
-
-    <Section eyebrow="What we publish" title="Research built from real community conversations"><div className="publication-intro"><div className="prose"><p>Most businesses rely on surveys, reviews and internal dashboards.</p><p>The Redditrepreneur studies the conversations people have when brands are not in the room.</p><p>We turn those conversations into clear research on trust, reputation, customer needs, market shifts and emerging risks.</p></div><div className="research-category-grid">{researchCategories.map(item=><article key={item.title}><span aria-hidden>{item.icon}</span><div><h3>{item.title}</h3><p>{item.description}</p></div></article>)}</div></div></Section>
 
   <Section eyebrow="Our thesis" title="We go where communities become industries." className="alt"><div className="thesis-copy"><p>Online communities increasingly develop their own economies, careers, businesses, technologies and cultures.</p><p>The Redditrepreneur identifies these ecosystems early and builds dedicated intelligence brands to understand them.</p></div><div className="capability-grid">{capabilities.map(([title,description],index)=><article key={title}><span aria-hidden>0{index+1}</span><h3>{title}</h3><p>{description}</p></article>)}</div></Section>
 
